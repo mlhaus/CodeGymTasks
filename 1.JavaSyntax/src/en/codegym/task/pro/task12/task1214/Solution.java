@@ -11,6 +11,14 @@ public class Solution {
     public static ArrayList<String> programmingLanguages = new ArrayList<>(Arrays.asList("C", "C++", "Python", "Pascal", "Pascal", "JavaScript", "Ruby", "Java", "Pascal"));
 
     public static void main(String[] args) {
-        //write your code here
+        programmingLanguages.removeIf(str -> str.equals("Pascal"));
+        
+
+//        for(int i = programmingLanguages.size() - 1; i >= 0; i--) {
+//            if(programmingLanguages.get(i).equals("Pascal")) {
+//                programmingLanguages.remove(i);
+//            }
+//        }
+        programmingLanguages.forEach(System.out::println);
     }
 }

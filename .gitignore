@@ -22,3 +22,6 @@ target/
 /Instruction.png
 /out.log
 /out.log.*
+
+.DS_Store
+*.log
